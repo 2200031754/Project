@@ -1,0 +1,302 @@
+footer p {
+            color: #fff;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Handloom Fashion</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2>Unique Handloom Fashion for the World</h2>
+        <p>Discover the beauty of handcrafted fashion made with love by artisans.</p>
+    </section>
+
+    <section id="products" class="products-section">
+        <h3>Our Handloom Products</h3>
+        <div class="product-list">
+            <div class="product-item">
+                <h4>Handloom Scarf</h4>
+                <p>₹3,500</p>
+            </div>
+            <div class="product-item">
+                <h4>Handloom Kurta</h4>
+                <p>₹6,500</p>
+            </div>
+            <div class="product-item">
+                <h4>Handloom Saree</h4>
+                <p>₹9,500</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h3>About Us</h3>
+        <p>We are dedicated to promoting handloom artisans by bringing their unique craftsmanship to global buyers. Each product reflects the cultural heritage and skilled work of local artisans.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Handloom Fashion. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handloom Fashion Store</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background-color: #d3e0ea;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #3a506b;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3a506b;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #5bc0be;
+        }
+
+        .banner {
+            background-color: #f6f5f5;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .banner h2 {
+            color: #1c2541;
+            font-size: 2.5em;
+        }
+
+        .banner p {
+            color: #4a6fa5;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .products-section {
+            padding: 30px;
+            background-color: #e4edf0;
+        }
+
+        .products-section h3 {
+            text-align: center;
+            color: #1c2541;
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product-item {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item h4 {
+            color: #1c2541;
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            color: #5bc0be;
+            font-size: 1.2em;
+        }
+
+        .about-section, .contact-section {
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .about-section h3, .contact-section h3 {
+            color: #1c2541;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section p, .contact-section p {
+            text-align: center;
+            color: #4a6fa5;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #5bc0be;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #3a506b;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #d3e0ea;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            color: #3a506b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Handloom Fashion</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="home" class="banner">
+        <h2>Unique Handloom Fashion for the World</h2>
+        <p>Discover the beauty of handcrafted fashion made with love by artisans.</p>
+    </section>
+
+    <section id="products" class="products-section">
+        <h3>Our Handloom Products</h3>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="product1.jpg" alt="Handloom Scarf">
+                <h4>Handloom Scarf</h4>
+                <p>$45</p>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Handloom Kurta">
+                <h4>Handloom Kurta</h4>
+                <p>$80</p>
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Handloom Saree">
+                <h4>Handloom Saree</h4>
+                <p>$120</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h3>About Us</h3>
+        <p>We are dedicated to promoting handloom artisans by bringing their unique craftsmanship to global buyers. Each product reflects the cultural heritage and skilled work of local artisans.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Handloom Fashion. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
